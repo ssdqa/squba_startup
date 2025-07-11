@@ -1,8 +1,12 @@
 
+# devtools::install_github('PEDSnet/argos')
+# install.packages('srcr')
+# devtools::install_github('ssdqa/squba.gen')
+# devtools::install_github('ssdqa/expectedvariablespresent')
 library(argos)
 library(srcr)
 library(squba.gen)
-library(squba)
+library(expectedvariablespresent)
 library(dplyr)
 
 #' The first step in using SQUBA is connecting to your database of choice.
@@ -14,6 +18,9 @@ library(dplyr)
 #' files for popular database systems are included in the `config_template/`
 #' subdirectory.
 
+# Unzip compressed CDM files
+unzip(zipfile = 'synthea_cdm/synthea_cdm_csvs.zip',
+      exdir = 'synthea_cdm/')
 
 #' `SQLite Database Setup & Connection`
 source('helper_functions/sqlite_setup.R')
