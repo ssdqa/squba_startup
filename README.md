@@ -14,8 +14,8 @@ utilize this repository. For your convenience, we have provided functionality
 to load the synthetic CDM data to an in-memory SQLite database. To get started
 with this method, load the required packages and execute [lines 22-34](setup.R#L22-L34) of setup.R.
 
-If you would rather connect to your own database, please see the database
-connection documentation for a detailed explanation of how you can establish
+If you would rather connect to your own database, please see the [database
+connection documentation](documentation) for a detailed explanation of how you can establish
 that connection. There are sample configuration files included in the
 [config_templates](config_templates) subdirectory. After deciding on your connection method, [insert the
 name](setup.R#L46) of the schema where the CDM data (either synthetic or your own) can be found. Then execute [lines
