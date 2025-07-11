@@ -1,0 +1,5 @@
+concept_id,concept_code,concept_name,vocabulary_id
+443614,431855005,Chronic kidney disease stage 1,SNOMED
+443601,431856006,Chronic kidney disease stage 2,SNOMED
+443612,431857002,Chronic kidney disease stage 4,SNOMED
+443597,433144002,Chronic kidney disease stage 3,SNOMED

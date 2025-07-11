@@ -1,0 +1,5 @@
+concept_id,concept_code,concept_name,vocabulary_id
+4323715,71493000,Transfusion of packed red blood cells,SNOMED
+4108705,180207008,Intravenous blood transfusion of packed cells,SNOMED
+4022171,116861002,Transfusion of fresh frozen plasma,SNOMED
+4022173,116863004,Transfusion of red blood cells,SNOMED

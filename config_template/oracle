@@ -1,0 +1,8 @@
+{
+    "src_name" : "odbc",
+    "src_args" : {
+          "Driver": "Oracle 23 ODBC driver",
+          "DBQ" : "HOST:PORT/SERVICE_NAME",
+          "UID" : "my_username"
+     }
+}

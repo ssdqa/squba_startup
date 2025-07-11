@@ -1,0 +1,6 @@
+{
+  "src_name" : "duckdb",
+  "src_args" : {
+    "dbdir"     : "/root/pcornet_db.duckdb"
+  }
+}

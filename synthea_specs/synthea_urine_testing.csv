@@ -1,0 +1,12 @@
+concept_id,concept_code,concept_name,vocabulary_id
+3035350,2514-8,Ketones [Presence] in Urine by Test strip,LOINC
+4211845,57378007,Urine protein measurement,SNOMED
+3001802,14959-1,Microalbumin/Creatinine [Mass Ratio] in Urine,LOINC
+3013682,3094-0,Urea nitrogen [Mass/volume] in Serum or Plasma,LOINC
+3025255,5769-5,Bacteria [#/area] in Urine sediment by Microscopy high power field,LOINC
+3011397,5794-3,Hemoglobin [Presence] in Urine by Test strip,LOINC
+3023539,5797-6,Ketones [Mass/volume] in Urine by Test strip,LOINC
+3004295,6299-2,Urea nitrogen [Mass/volume] in Blood,LOINC
+3026008,630-4,Bacteria identified in Urine by Culture,LOINC
+40479598,441550005,Urinalysis with reflex to microscopy and culture,SNOMED
+4024509,117010004,Urine culture,SNOMED

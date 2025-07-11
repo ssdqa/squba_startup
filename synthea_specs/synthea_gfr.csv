@@ -1,0 +1,4 @@
+concept_id,concept_code,concept_name,vocabulary_id
+3012888,8462-4,Diastolic blood pressure,LOINC
+3027598,8478-0,Mean blood pressure,LOINC
+3004249,8480-6,Systolic blood pressure,LOINC

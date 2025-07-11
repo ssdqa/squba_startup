@@ -1,0 +1,12 @@
+{
+    "src_name" : "odbc",
+    "src_args" : {
+          "Driver": "SnowflakeDSIIDriver",
+          "Server": "my_server",
+          "SCHEMA": "my_schema",
+          "Database": "my_database",
+          "UID": "my_username",
+          "Role":"my_role",
+          "WAREHOUSE":"my_warehouse"
+     }
+ }

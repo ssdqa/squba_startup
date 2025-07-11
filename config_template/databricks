@@ -1,0 +1,17 @@
+ {
+    "src_name" : "odbc",
+    "src_args" : {
+          "Driver": "Simba Spark ODBC Driver",
+          "Host": "my_host",
+          "UID": "token",
+          "PWD": "DO_NOT_EDIT_IF_YOU_WISH_TO_ENTER_IT_ON_DOCKER_RUN",
+          "Port": 443,
+          "AuthMech": 3,
+          "SSL": 1,
+          "ThriftTransport": 2,
+          "LogLevel": 2,
+          "HTTPPath": "myHTTPPath",
+          "Schema": "my_cdm_schema",
+          "Catalog": "my_catalog"
+     }
+ }

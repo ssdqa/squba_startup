@@ -1,0 +1,7 @@
+{
+    "src_name" : "src_bigquery",
+    "src_args" : {
+        "project": "myProject",
+        "dataset": "myDataset"
+     }
+ }
