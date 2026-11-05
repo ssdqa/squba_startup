@@ -1,8 +1,8 @@
 
-# devtools::install_github('PEDSnet/argos')
+# remotes::install_github('PEDSnet/argos')
 # install.packages('srcr')
-# devtools::install_github('ssdqa/squba.gen')
-# devtools::install_github('ssdqa/expectedvariablespresent')
+# remotes::install_github('ssdqa/squba.gen')
+# remotes::install_github('ssdqa/expectedvariablespresent')
 library(argos)
 library(srcr)
 library(squba.gen)
@@ -22,25 +22,28 @@ library(dplyr)
 unzip(zipfile = 'synthea_cdm/synthea_cdm_csvs.zip',
       exdir = 'synthea_cdm/')
 
-#' `SQLite Database Setup & Connection`
-source('helper_functions/sqlite_setup.R')
+# source helper files
+source('helper_functions/duckdb_setup.R')
+source('helper_functions/argos_setup.R')
+
+#' `DuckDB Database Setup & Connection`
 db_conn <- mk_testdb_omop()
 
-initialize_dq_session(session_name = 'squba_test',
-                      working_directory = getwd(),
-                      db_conn = db_conn,
-                      is_json = FALSE,
-                      file_subdirectory = 'synthea_specs',
-                      cdm_schema = NA)
+test_session <- argos$new('test_session')$init_session(db_src = db_conn,
+                                                       cdm_schema = NA,
+                                                       base_dir = getwd(),
+                                                       subdirs = list('specs' = 'synthea_specs'))
 
+set_argos_default(test_session)
 
 #' `Local Database Setup & Connection`
 
 db_conn <- 'path to your json file' #or a DBI connection object
 
-initialize_dq_session(session_name = 'squba_test',
-                      working_directory = getwd(),
-                      db_conn = db_conn,
-                      is_json = FALSE,
-                      file_subdirectory = 'synthea_specs',
-                      cdm_schema = 'my_CDM_schema') # the name of the schema on your DB where the CDM data is located
+test_session <- argos$new('test_session')$init_session(db_src = db_conn,
+                                                       cdm_schema = 'my_CDM_schema', # the name of the schema on your DB where the CDM data is located
+                                                       results_schema = 'my_results_schema',
+                                                       base_dir = getwd(),
+                                                       subdirs = list('specs' = 'synthea_specs'))
+
+set_argos_default(test_session)

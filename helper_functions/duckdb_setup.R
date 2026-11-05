@@ -6,7 +6,7 @@ mk_testdb_omop <- function(){
   if (! is.null(testdb)) return(testdb)
 
   # Create an ephemeral in-memory RSQLite database
-  testdb <<- DBI::dbConnect(RSQLite::SQLite(), ":memory:", extended_types = T)
+  testdb <<- DBI::dbConnect(duckdb::duckdb(), ":memory:", extended_types = T)
   # Read all csv files in testdata folder
   col_type_mapping <- list(
     'condition_occurrence' = 'iiiDTDTiiciiicic',

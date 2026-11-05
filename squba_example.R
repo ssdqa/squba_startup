@@ -14,10 +14,8 @@
 my_cohort <- cdm_tbl('person') %>%
   select(person_id) %>%
   mutate(site = 'my_site',
-         start_date = '2000-02-04',
-         end_date = '2010-04-07') %>% collect() %>%
-  mutate(start_date = as.Date(start_date),
-         end_date = as.Date(end_date))
+         start_date = as.Date('2000-02-04'),
+         end_date = as.Date('2010-04-07'))
 
 #' Next, you should select the module you would like to execute. All modules and
 #' the distinct configurations you could execute are documented in our metadata
