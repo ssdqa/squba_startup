@@ -8,6 +8,7 @@ library(srcr)
 library(squba.gen)
 library(expectedvariablespresent)
 library(dplyr)
+library(duckdb)
 
 #' The first step in using SQUBA is connecting to your database of choice.
 #' This repository contains a function that will load the synthetic data into an
